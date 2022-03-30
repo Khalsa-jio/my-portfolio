@@ -6,7 +6,7 @@ import "react-circular-progressbar/dist/styles.css"
 import ProgressBar from "@ramonak/react-progress-bar"
 import { CheckIcon, DownloadIcon } from "@heroicons/react/solid"
 import Link from "next/link"
-
+import Image from "next/image"
 interface Props {
   websiteData: Website
   open: boolean
@@ -38,10 +38,9 @@ function Sidebar({ websiteData, open, setOpen }: Props) {
       p-[30px] text-center group cursor-pointer "
       >
         <div className="w-[70px] h-[70px] m-auto rounded-full ">
-          <img
-            className="w-full h-full rounded-full"
+          <Image
             src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-user-vector-avatar-png-image_4830521.jpg"
-            alt=""
+            alt="avatar"
           />
         </div>
         <div

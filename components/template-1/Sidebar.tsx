@@ -1,4 +1,4 @@
-import { VerticalDots } from "../global/svg/VerticalDots"
+import { VerticalDots } from "../svg/VerticalDots"
 import React from "react"
 import { Website } from "../../interfaces"
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar"

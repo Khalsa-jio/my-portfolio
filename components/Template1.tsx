@@ -2,10 +2,10 @@ import { url } from "inspector"
 import Head from "next/head"
 import React from "react"
 import { Website } from "../interfaces"
-import { VerticalDots } from "./global/svg/VerticalDots"
-import Navbar from "./Template-1 component/Navbar"
-import ScrollContent from "./Template-1 component/ScrollContent"
-import Sidebar from "./Template-1 component/Sidebar"
+import { VerticalDots } from "./svg/VerticalDots"
+import Navbar from "./template-1/Navbar"
+import ScrollContent from "./template-1/ScrollContent"
+import Sidebar from "./template-1/Sidebar"
 
 function Template1({ websiteData }: { websiteData: Website }) {
   const [navbarOpen, setNavbarOpen] = React.useState<boolean>(false)

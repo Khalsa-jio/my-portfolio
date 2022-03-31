@@ -1,5 +1,5 @@
-import { Menubar } from "../global/svg/Menubar"
-import { Cross } from "../global/svg/Cross"
+import { Menubar } from "../svg/Menubar"
+import { Cross } from "../svg/Cross"
 import Link from "next/link"
 import React from "react"
 import { Website } from "../../interfaces"

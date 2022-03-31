@@ -19,11 +19,11 @@ function Navbar({ navbarOpen, setNavbarOpen, menu }: Props) {
   }
 
   return (
-    <div className="absolute z-50 w-[0] md:right-[0] right-[-160px] top-[-70px] h-[calc(100vh-30px)]">
+    <div className="absolute z-50 w-[0] md:right-[0] right-[-160px] top-[-70px] h-screen">
       <div
         className={`${
           navbarOpen ? " w-[230px] translate-x-[-380px] md:translate-x-[-230px]" : " w-[80px] translate-x-[-80px]"
-        } transform transition-all ease-in-out duration-700 h-[100vh] fixed top-auto right-auto bg-grey`}
+        } transform transition-all ease-in-out duration-700 h-screen fixed top-auto right-auto bg-grey`}
       >
         <div className="relative">
           <div

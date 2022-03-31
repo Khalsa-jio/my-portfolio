@@ -19,7 +19,7 @@ function Sidebar({ websiteData, open, setOpen }: Props) {
     <div
       className={`fixed top-0 ${
         open ? "left-0 " : "left-[-290px] "
-      } transition-all ease-in-out duration-700 h-[100vh] w-[290px] bg-grey  pt-4
+      } transition-all ease-in-out duration-700 h-screen w-[290px] bg-grey  pt-4
     md:block z-50 shadow-lg shadow-blue-500/40 px-[10px] `}
     >
       <div
@@ -57,7 +57,7 @@ function Sidebar({ websiteData, open, setOpen }: Props) {
         </div>
       </div>
       <div
-        className=" no-scrollbar px-8  pt-[240px] pb-[50px] w-100 h-[calc(100vh-30px)]
+        className=" no-scrollbar px-8  pt-[240px] pb-[50px] w-100 h-screen
       overflow-y-auto"
       >
         <div className="flex flex-col w-full py-[15px] border-b-[1px] border-textGray border-opacity-30 mb-[20px]">

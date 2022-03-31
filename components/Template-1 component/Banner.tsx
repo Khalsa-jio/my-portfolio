@@ -37,7 +37,7 @@ export function Banner() {
           </div>
           <div className="absolute w-[35%] h-full lg:opacity-100 opacity-0 bottom-0 right-0">
             <div className="relative w-full h-full ">
-              <Image src={"/images/myImagesmall.png"} layout="fill" objectFit="contain" />
+              <Image src={"/images/myImagesmall.png"} alt="" layout="fill" objectFit="contain" />
             </div>
           </div>
         </div>

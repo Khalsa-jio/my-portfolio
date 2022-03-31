@@ -4,7 +4,7 @@ import { websiteData } from "../../../utils/websiteData"
 const handler = (_req: NextApiRequest, res: NextApiResponse) => {
   try {
     if (!Array.isArray(websiteData)) {
-      throw new Error("Cannot find user data")
+      throw new Error("Cannot find website data")
     }
 
     res.status(200).json(websiteData)

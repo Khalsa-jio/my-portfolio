@@ -15,10 +15,6 @@ interface Props {
 }
 
 function Sidebar({ websiteData, open, setOpen }: Props) {
-  const downloadFile = () => {
-    window.open("http://localhost:3000/public/files/singh_jio_resume.pdf")
-  }
-
   return (
     <div
       className={`fixed top-0 ${

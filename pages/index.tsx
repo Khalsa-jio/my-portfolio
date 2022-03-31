@@ -17,7 +17,7 @@ const IndexPage = ({ data }: Props) => {
 export default IndexPage
 
 export const getServerSideProps = async () => {
-  const data = await fetch("http://localhost:3000/api/website").then(res => res.json())
+  const data = await fetch("/api/website").then(res => res.json())
 
   return {
     props: {

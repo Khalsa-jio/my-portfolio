@@ -127,14 +127,12 @@ function Sidebar({ websiteData, open, setOpen }: Props) {
           </ul>
         </div>
         <div className="py-[15px] text-textGray cursor-pointer flex ">
-          <SRLWrapper>
-            <Link href={"/files/singh_jio_resume.pdf"}>
-              <a target="_blank" className="flex uppercase text-xs font-bold">
-                Download CV
-                <DownloadIcon className="h-[15px] ml-[5px]   font-bold  text-textGray mr-1 pt-[1px]" />
-              </a>
-            </Link>
-          </SRLWrapper>
+          <Link href={"/files/singh_jio_resume.pdf"}>
+            <a target="_blank" className="flex uppercase text-xs font-bold">
+              Download CV
+              <DownloadIcon className="h-[15px] ml-[5px]   font-bold  text-textGray mr-1 pt-[1px]" />
+            </a>
+          </Link>
         </div>
       </div>
       <div className="h-[50px] flex bg-grey2 w-full justify-center items-center	gap-3 absolute bottom-0 left-0  z-999 ">

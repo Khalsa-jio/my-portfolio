@@ -19,13 +19,7 @@ const IndexPage = () => {
     fetchData()
   }, [])
 
-  return (
-    <>
-      {data.length > 0 && (
-        <SimpleReactLightbox>{data[0].websiteId === 1 && <Template1 websiteData={data[0]} />}</SimpleReactLightbox>
-      )}
-    </>
-  )
+  return <>{data.length > 0 && data[0].websiteId === 1 && <Template1 websiteData={data[0]} />}</>
 }
 
 export default IndexPage

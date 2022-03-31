@@ -35,7 +35,7 @@ export function Banner() {
               <a className="h-[45px] text-xs px-[35px] py-[10px] bg-yellow ">Contact Me</a>
             </button>
           </div>
-          <div className="absolute w-[35%] h-full lg:opacity-100 opacity-0 bottom-0 right-0">
+          <div className="absolute w-1/3 h-full lg:opacity-100 opacity-0 bottom-0 right-0">
             <div className="relative w-full h-full ">
               <Image src={"/images/myImagesmall.png"} alt="" layout="fill" objectFit="contain" />
             </div>

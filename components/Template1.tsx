@@ -30,12 +30,12 @@ function Template1({ websiteData }: { websiteData: Website }) {
         </div>
         <div>
           <div
-            className="  h-[400px] w-[100%] fixed top-0  bg-center bg-cover"
+            className="  h-[400px] w-full fixed top-0  bg-center bg-cover"
             style={{
               backgroundImage: `url(${"/images/hills.jpg"})`,
             }}
           >
-            <div className="h-[100%] w-[100%] banner-gradient"></div>
+            <div className="h-full w-full banner-gradient"></div>
           </div>
           <div
             className={`

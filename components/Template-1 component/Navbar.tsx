@@ -27,7 +27,7 @@ function Navbar({ navbarOpen, setNavbarOpen, menu }: Props) {
       >
         <div className="relative">
           <div
-            className={`w-[100%] h-[70px] flex justify-start items-center absolute top-0 md:left-0 ${
+            className={`w-full h-[70px] flex justify-start items-center absolute top-0 md:left-0 ${
               navbarOpen ? "left-0" : "left-[-150px]"
             } z-10 transition-all ease-in-out duration-700 shadow drop-shadow-xs bg-grey2 p-[30px] group `}
           >
@@ -43,10 +43,10 @@ function Navbar({ navbarOpen, setNavbarOpen, menu }: Props) {
             <a className="cursor-pointer p-4 text-sm">Home</a>
           </Link>
         </div>
-        <nav className="h-[100%]  flex items-center justify-center relative">
-          <ul className="min-w-[230px] w-[100%] m-b-[60px] ">
+        <nav className="h-full  flex items-center justify-center relative">
+          <ul className="min-w-[230px] w-full m-b-[60px] ">
             <li
-              className={`w-[100%] transition  text-textGray hover:text-white py-[7px] px-[30px] ${
+              className={`w-full transition  text-textGray hover:text-white py-[7px] px-[30px] ${
                 navbarOpen ? "translate-x-[0] opacity-100" : "opacity-0 translate-x-[60px]"
               } duration-700 ease-in-out`}
             >
@@ -59,7 +59,7 @@ function Navbar({ navbarOpen, setNavbarOpen, menu }: Props) {
               return (
                 <li
                   key={index}
-                  className={`w-[100%] transition  text-textGray hover:text-white py-[7px] px-[30px] ${
+                  className={`w-full transition  text-textGray hover:text-white py-[7px] px-[30px] ${
                     navbarOpen ? "translate-x-[0] opacity-100" : "opacity-0 translate-x-[60px]"
                   } duration-700 ease-in-out`}
                 >
@@ -70,7 +70,7 @@ function Navbar({ navbarOpen, setNavbarOpen, menu }: Props) {
               )
             })}
             <li
-              className={`w-[100%] transition  text-textGray hover:text-white py-[7px] px-[30px] ${
+              className={`w-full transition  text-textGray hover:text-white py-[7px] px-[30px] ${
                 navbarOpen ? "translate-x-[0] opacity-100" : "opacity-0 translate-x-[60px]"
               }  duration-700 ease-in-out`}
             >

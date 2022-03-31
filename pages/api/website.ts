@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next"
-import { websiteData } from "../../../utils/websiteData"
+import { websiteData } from "../../utils/websiteData"
 
 const handler = (_req: NextApiRequest, res: NextApiResponse) => {
   try {

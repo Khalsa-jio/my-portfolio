@@ -26,9 +26,11 @@ module.exports = {
       sans: ["Poppins", "sans-serif"],
       serif: ["Courier Prime", "serif"],
     },
-    extend: {
-      dropShadow: {
-        xs: "0,1px,4px,0 rgba(15,15,20, 0.1) ",
+    theme: {
+      extend: {
+        dropShadow: {
+          xs: "0,1px,4px,0 rgba(15,15,20, 0.1) ",
+        },
       },
     },
   },

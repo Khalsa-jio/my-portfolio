@@ -11,7 +11,13 @@ interface Props {
 }
 
 function Navbar({ navbarOpen, setNavbarOpen, menu }: Props) {
-  let time = 100
+  let time = 50
+
+  function scrollToSection(el: string) {
+    const divElement = document.getElementById(el)
+    divElement.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <div className="absolute z-50 w-[0] md:right-[0] right-[-160px] top-[-70px] h-[calc(100vh-30px)]">
       <div
@@ -39,21 +45,41 @@ function Navbar({ navbarOpen, setNavbarOpen, menu }: Props) {
         </div>
         <nav className="h-[100%]  flex items-center justify-center relative">
           <ul className="min-w-[230px] w-[100%] m-b-[60px] ">
+            <li
+              className={`w-[100%] transition  text-textGray hover:text-white py-[7px] px-[30px] ${
+                navbarOpen ? "translate-x-[0] opacity-100" : "opacity-0 translate-x-[60px]"
+              } duration-700 ease-in-out`}
+            >
+              <Link href="/">
+                <a className="uppercase text-md font-semibold tracking-normal">Home</a>
+              </Link>
+            </li>
             {menu.map((item, index) => {
-              time = time + 100
+              time = time + 50
               return (
                 <li
                   key={index}
                   className={`w-[100%] transition  text-textGray hover:text-white py-[7px] px-[30px] ${
                     navbarOpen ? "translate-x-[0] opacity-100" : "opacity-0 translate-x-[60px]"
-                  } delay-[${time}ms] duration-700 ease-in-out`}
+                  } duration-700 ease-in-out`}
                 >
-                  <Link href={item.link}>
+                  <button onClick={() => scrollToSection(item.link)}>
                     <a className="uppercase text-md font-semibold tracking-normal">{item.name}</a>
-                  </Link>
+                  </button>
                 </li>
               )
             })}
+            <li
+              className={`w-[100%] transition  text-textGray hover:text-white py-[7px] px-[30px] ${
+                navbarOpen ? "translate-x-[0] opacity-100" : "opacity-0 translate-x-[60px]"
+              }  duration-700 ease-in-out`}
+            >
+              <Link href={"/files/singh_jio_resume.pdf"}>
+                <a target="_blank" className="uppercase text-md font-semibold tracking-normal">
+                  Resume
+                </a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

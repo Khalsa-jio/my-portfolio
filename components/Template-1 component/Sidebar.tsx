@@ -1,5 +1,5 @@
 import { VerticalDots } from "../global/svg/VerticalDots"
-import React, { useState } from "react"
+import React from "react"
 import { Website } from "../../interfaces"
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar"
 import "react-circular-progressbar/dist/styles.css"
@@ -7,6 +7,7 @@ import ProgressBar from "@ramonak/react-progress-bar"
 import { CheckIcon, DownloadIcon } from "@heroicons/react/solid"
 import Link from "next/link"
 import Image from "next/image"
+import { SRLWrapper } from "simple-react-lightbox"
 interface Props {
   websiteData: Website
   open: boolean
@@ -15,7 +16,7 @@ interface Props {
 
 function Sidebar({ websiteData, open, setOpen }: Props) {
   const downloadFile = () => {
-    window.open("http://localhost:3000/api/files/singh_jio_resume.pdf")
+    window.open("http://localhost:3000/public/files/singh_jio_resume.pdf")
   }
 
   return (
@@ -37,12 +38,12 @@ function Sidebar({ websiteData, open, setOpen }: Props) {
         className=" bg-grey2 absolute top-2 left-0 w-full z-55 h-[235px]
       p-[30px] text-center group cursor-pointer "
       >
-        <div className="w-[70px] h-[70px] m-auto rounded-full ">
-          <Image
-            src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-user-vector-avatar-png-image_4830521.jpg"
-            alt="avatar"
-          />
-        </div>
+        <SRLWrapper>
+          <div className="w-[80px] h-[80px] m-auto relative ">
+            <Image className="rounded-full" src="/sukhwinder.jpg" alt="Sukhwinder Singh" layout="fill" />
+          </div>
+        </SRLWrapper>
+
         <div
           className=" text-white text-base tracking-widest group-hover:tracking-wide font-semibold my-2
         ease-in-out duration-200
@@ -130,10 +131,14 @@ function Sidebar({ websiteData, open, setOpen }: Props) {
           </ul>
         </div>
         <div className="py-[15px] text-textGray cursor-pointer flex ">
-          <button className="flex uppercase text-xs font-bold" onClick={downloadFile}>
-            Download CV
-            <DownloadIcon className="h-[15px] ml-[5px]   font-bold  text-textGray mr-1 pt-[1px]" />
-          </button>
+          <SRLWrapper>
+            <Link href={"/files/singh_jio_resume.pdf"}>
+              <a target="_blank" className="flex uppercase text-xs font-bold">
+                Download CV
+                <DownloadIcon className="h-[15px] ml-[5px]   font-bold  text-textGray mr-1 pt-[1px]" />
+              </a>
+            </Link>
+          </SRLWrapper>
         </div>
       </div>
       <div className="h-[50px] flex bg-grey2 w-full justify-center items-center	gap-3 absolute bottom-0 left-0  z-999 ">

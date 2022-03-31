@@ -114,28 +114,20 @@ export const websiteData: Website[] = [
     },
     menu: [
       {
-        name: "Home",
-        link: "/",
-      },
-      {
         name: "About",
-        link: "#about",
+        link: "about",
       },
       {
         name: "Projects",
-        link: "#projects",
+        link: "projects",
       },
       {
         name: "Services",
-        link: "#services",
+        link: "services",
       },
       {
         name: "Contact",
-        link: "#contact",
-      },
-      {
-        name: "Resume",
-        link: "#resume",
+        link: "contact",
       },
     ],
     history: [
@@ -182,33 +174,47 @@ export const websiteData: Website[] = [
     projects: [
       {
         title: "Staah Booking Engine",
-        content: "this website has been created using React js,axios, RESTful API, styled components and many more ",
-        image: "https://www.staah.com/images/logo.png",
+        content: "This website has been created using React js,axios, styled components and many more ",
+        image: "/images/staah.png",
         link: "https://apibe.staah.net/#?propertyId=9909",
       },
       {
         title: "Staah Hotel",
-        content: "this website has been created using React js,axios, RESTful API, styled components and many more ",
-        image: "https://www.staah.com/images/logo.png",
+        content: "This Hotel website has been created using React js,axios,  styled components and many more ",
+        image: "/images/staah.png",
         link: "https://strathnesshouse.com/",
       },
       {
         title: "Asian Network",
-        content: "this website has been created using html, css, javascript, and php for the backend.  ",
-        image: "https://www.asiannetwork.org.nz/themes/asiannetwork/images/logo.png",
+        content:
+          "This non-profit Organization website has been created using html, css, javascript, and php for the backend.  ",
+        image: "/images/asian.png",
         link: "https://www.asiannetwork.org.nz/",
       },
       {
         title: "Little hands",
-        content: "this website has been created using html, css, javascript, and php for the backend.  ",
-        image: "https://www.littlehands.co.nz/uploads/8/logofoot.png",
+        content: "This kindergarten website has been created using html, css, javascript, and php for the backend.  ",
+        image: "/images/little.png",
         link: "http://www.littlehands.co.nz/",
       },
       {
         title: "ICount Services",
-        content: "this website has been created using html, css, javascript, and php for the backend.  ",
-        image: "http://www.icountservices.co.nz/themes/icount/images/logo.png",
+        content:
+          "This accountant and Business consultant website has been created using html, css, javascript, and php for the backend.  ",
+        image: "/images/icount.png",
         link: "http://www.icountservices.co.nz/",
+      },
+      {
+        title: "Ritmo Fusion",
+        content: "This DJ website has been created using html, css, javascript, and php for the backend.  ",
+        image: "/images/ritmo.png",
+        link: "http://www.ritmofusion.com/",
+      },
+      {
+        title: "Kiwi Motor Homes",
+        content: "This website has been created using html, css, javascript, and php for the backend.  ",
+        image: "/images/kmh.png",
+        link: "https://www.kiwimotorhomes.co.nz/",
       },
     ],
   },

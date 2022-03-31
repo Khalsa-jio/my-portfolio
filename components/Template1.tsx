@@ -32,7 +32,7 @@ function Template1({ websiteData }: { websiteData: Website }) {
           <div
             className="  h-[400px] w-[100%] fixed top-0  bg-center bg-cover"
             style={{
-              backgroundImage: `url(${"https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg"})`,
+              backgroundImage: `url(${"/images/hills.jpg"})`,
             }}
           >
             <div className="h-[100%] w-[100%] banner-gradient"></div>

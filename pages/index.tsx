@@ -1,13 +1,17 @@
 import Template1 from "../components/Template1"
 import { Website } from "../interfaces"
-
+import SimpleReactLightbox from "simple-react-lightbox"
 interface Props {
   data: Website
   websiteData: Website
 }
 
 const IndexPage = ({ data }: Props) => {
-  return <>{data[0].websiteId === 1 && <Template1 websiteData={data[0]} />}</>
+  return (
+    <>
+      <SimpleReactLightbox>{data[0].websiteId === 1 && <Template1 websiteData={data[0]} />}</SimpleReactLightbox>
+    </>
+  )
 }
 
 export default IndexPage

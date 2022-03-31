@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./pages/**/*.tsx", "./components/**/*.tsx"],
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
       sm: "480px",
@@ -26,11 +26,9 @@ module.exports = {
       sans: ["Poppins", "sans-serif"],
       serif: ["Courier Prime", "serif"],
     },
-    theme: {
-      extend: {
-        dropShadow: {
-          xs: "0,1px,4px,0 rgba(15,15,20, 0.1) ",
-        },
+    extend: {
+      dropShadow: {
+        xs: "0,1px,4px,0 rgba(15,15,20, 0.1) ",
       },
     },
   },

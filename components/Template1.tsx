@@ -39,7 +39,9 @@ function Template1({ websiteData }: { websiteData: Website }) {
           </div>
           <div
             className={`
-          ${navbarOpen && " lg:pr-[230px]"} ${sidebarOpen ? "lg:pl-[290px] lg:w-[100vw-290px]" : "w-[100vw-80px]"} 
+          ${navbarOpen && " lg:pr-[230px]"} ${
+              sidebarOpen ? "lg:pl-[290px] lg:w-[calc(100vw-15px)]" : "w-[calc(100vw-15px)]"
+            } 
           transition-all ease-in-out md:pr-[80px] overflow-hidden  duration-700 relative mt-[70px]`}
           >
             <ScrollContent websiteData={websiteData} />

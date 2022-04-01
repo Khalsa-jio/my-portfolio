@@ -57,7 +57,7 @@ function Sidebar({ websiteData, open, setOpen }: Props) {
         </div>
       </div>
       <div
-        className=" no-scrollbar px-8  pt-[240px] pb-[50px] w-100 h-screen
+        className=" no-scrollbar px-8  pt-[240px] pb-[50px] w-full h-screen
       overflow-y-auto"
       >
         <div className="flex flex-col w-full py-[15px] border-b-[1px] border-textGray border-opacity-30 mb-[20px]">
@@ -135,7 +135,7 @@ function Sidebar({ websiteData, open, setOpen }: Props) {
           </Link>
         </div>
       </div>
-      <div className="h-[50px] flex bg-grey2 w-full justify-center items-center	gap-3 absolute bottom-0 left-0  z-999 ">
+      <div className="h-[50px] flex bg-grey2 w-full justify-center items-center	gap-3 absolute bottom-0 left-0  z-[999]s ">
         <Link href={websiteData.social.github}>
           <a target="_blank">
             <svg fill="#8c8c8e" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="20px" height="20px">

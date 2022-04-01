@@ -19,7 +19,7 @@ function Navbar({ navbarOpen, setNavbarOpen, menu }: Props) {
   }
 
   return (
-    <div className="absolute z-50 w-[0] md:right-[0] right-[-160px] top-[-70px] h-screen">
+    <div className="absolute z-50 w-0 md:right-0 right-[-160px] top-[-70px] h-screen">
       <div
         className={`${
           navbarOpen ? " w-[230px] translate-x-[-380px] md:translate-x-[-230px]" : " w-[80px] translate-x-[-80px]"
@@ -44,7 +44,7 @@ function Navbar({ navbarOpen, setNavbarOpen, menu }: Props) {
           </Link>
         </div>
         <nav className="h-full  flex items-center justify-center relative">
-          <ul className="min-w-[230px] w-full m-b-[60px] ">
+          <ul className="min-w-[230px] w-full mb-[60px] ">
             <li
               className={`w-full transition  text-textGray hover:text-white py-[7px] px-[30px] ${
                 navbarOpen ? "translate-x-[0] opacity-100" : "opacity-0 translate-x-[60px]"
